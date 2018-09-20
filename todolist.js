@@ -30,7 +30,7 @@ class Todolist extends React.Component
   {
     alert(e.target.name);
     var currentlist=this.state.tasks;
-    currentlist.splice( currentlist.indexOf('foo'), 1 );
+    currentlist.splice( currentlist.indexOf(e.target.name), 1 );
     this.setState({tasks:currentlist});
     
   }
